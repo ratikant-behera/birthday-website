@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Kavya">
+	<meta name="robots" content="index, follow" />
+	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" />
+    <meta name="keywords" content="Birthday, Happy">
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+    <!-- End of Facebook Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet/less" href="cake.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+</head>
+
+<!--
+	✏️  TO PERSONALIZE FOR SOMEONE ELSE:
+	Just change the "data-name" value below. Every "Kavya" mention
+	on the page (candle wish + final message) updates automatically.
+-->
+<body data-name="Kavya">
+	<div class="loading"></div>
+	<audio class="song" controls loop>
+        <source src="hbd.mp3"></source>
+	   Your browser isn't invited for super fun audio time.
+    </audio>
+    <div class="balloons text-center" id="b1">
+    	<h2 style="color:#F2B300;">H</h2>
+    </div>
+    <div class="balloons text-center" id="b2">
+    	<h2 style="color:#0719D4;">B</h2>
+    </div>
+	<div class="balloons text-center" id="b3">
+    	<h2 style="color:#D14D39;">D</h2>
+    </div>
+	<div class="balloons text-center" id="b4">
+    	<h2 style="color:#8FAD00;">K</h2>
+    </div>
+	<div class="balloons text-center" id="b5">
+    	<h2 style="color:#8377E4;">A</h2>
+    </div>
+    <div class="balloons text-center" id="b6">
+    	<h2 style="color:#99C96A;">V</h2>
+    </div>
+    <div class="balloons text-center" id="b7">
+    	<h2 style="color:#20CFB4;">Y</h2>
+    </div>
+	<div class="balloons text-center" id="b8">
+    	<h2 style="color:#8377E4;">A</h2>
+    </div>
+
+    <img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+    <!-- Knife used in the cake-cutting animation -->
+    <div class="knife-wrap" id="knife">
+        <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#fdfefe"/>
+                    <stop offset="55%" stop-color="#cfd8dc"/>
+                    <stop offset="100%" stop-color="#eceff1"/>
+                </linearGradient>
+                <linearGradient id="handleGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#6d4c41"/>
+                    <stop offset="100%" stop-color="#3e2723"/>
+                </linearGradient>
+            </defs>
+            <polygon points="0,20 140,4 152,30 0,42" fill="url(#bladeGrad)" stroke="#90a4ae" stroke-width="1"/>
+            <rect x="146" y="14" width="52" height="22" rx="7" fill="url(#handleGrad)"/>
+            <rect x="152" y="11" width="6" height="28" rx="2" fill="#2e1a13"/>
+            <rect x="168" y="11" width="6" height="28" rx="2" fill="#2e1a13"/>
+        </svg>
+    </div>
+
+    <!-- Big animated "Happy Birthday <name>" popup shown right as the cake is cut -->
+    <div class="bday-popup" id="bday_popup">
+        <h1>🎉 Happy Birthday, <span class="user-name">Kavya</span>! 🎂</h1>
+    </div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_orange"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="bannar">
+			</div>
+		</div>
+		<div class="row cake-cover">
+			<div class="col-md-12 texr-center">
+				<div class="cake">
+				  <div class="velas">
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				  </div>
+				  <div class="cobertura"></div>
+				  <div class="bizcocho"></div>
+				</div>
+			</div>
+		</div>
+		<!-- ================================================
+		     LETTER SCENE
+		     Replaces the old "flash one line at a time"
+		     message with a sealed envelope you tap open;
+		     the letter then slides out with a soft,
+		     staggered line-by-line reveal.
+		     ================================================ -->
+		<div class="letter-scene" id="letter_scene">
+
+			<div class="letter-overlay" id="letter_overlay"></div>
+
+			<div class="envelope" id="envelope">
+				<div class="envelope-body"></div>
+				<div class="envelope-flap"></div>
+				<div class="envelope-seal">💌</div>
+			</div>
+			<p class="envelope-hint">👆 Tap the envelope to open your letter</p>
+
+			<div class="letter-paper" id="letter_paper">
+				<button class="letter-close" id="letter_close" aria-label="Close letter">✕</button>
+				<h2 class="letter-heading">ప్రియమైన <span class="user-name">Kavya</span>,</h2>
+
+<div class="letter-body">
+    <p>ఈ రోజు...</p>
+    <p>మిగతా రోజుల్లాగే అందంగా ఉంది</p>
+    <p>కానీ ఈ రోజు ఇంకొంచెం ప్రత్యేకం</p>
+    <p>ఎందుకంటే...</p>
+    <p>ఈ రోజు నీకే ప్రత్యేకమైన రోజు</p>
+
+    <p><strong>అయితే</strong></p>
+    <p>నీకు తెలుసా..?</p>
+    <p>ఈ రోజు ఎందుకు ఇంత ప్రత్యేకమో...</p>
+    <p>ఎందుకంటే ఇది</p>
+    <p>నీ కోసం వచ్చిన అందమైన రోజు</p>
+
+    <p>అందుకే...</p>
+    <p>ఈ రోజును</p>
+    <p>ఎప్పటికీ గుర్తుండిపోయేలా</p>
+    <p>ఒక అందమైన జ్ఞాపకంగా మార్చుకుందాం</p>
+
+    <p>నీకు నా మనస్ఫూర్తిగా</p>
+    <p>అన్ని మంచివే జరగాలని కోరుకుంటున్నాను</p>
+    <p>నీ జీవితం ఎప్పుడూ ప్రశాంతంగా ఉండాలి</p>
+    <p>నీ కోరికలన్నీ నెరవేరాలి</p>
+
+    <p>నీ కలలను ఎప్పుడూ మర్చిపోకు</p>
+    <p>నీ ఆశయాలను గుర్తు పెట్టుకో</p>
+    <p>నువ్వు ఒక స్వేచ్ఛా పక్షిలా...</p>
+    <p>ఆకాశంలో స్వేచ్ఛగా ఎగురుతూ</p>
+    <p>నీకు నచ్చిన జీవితాన్ని జీవించాలి</p>
+
+    <p>ఇక ముందు ఎన్నో మార్పులు వస్తాయి...</p>
+    <p>నీ జీవితంలో ఒక కొత్త అధ్యాయం</p>
+    <p>ఇప్పుడే మొదలవుతోంది</p>
+
+    <p>ఎప్పుడైనా ఏదైనా కష్టంగా అనిపిస్తే...</p>
+    <p>భయపడకు</p>
+    <p>ఎందుకంటే...</p>
+    <p>శ్రీ వెంకటేశ్వర స్వామి ఎప్పుడూ నీకు తోడుగా ఉంటారు</p>
+    <p>నిన్ను నడిపిస్తూ, కాపాడుతూ ఉంటారు</p>
+
+    <p>ఈ సంవత్సరం నీకు మరింత అందంగా ఉండాలి</p>
+    <p>నీ ప్రయాణంలో...</p>
+    <p>ఎన్నో సంతోషాలు నీకు దొరకాలి</p>
+
+    <p>ఎప్పుడూ ఉత్సాహంగా ఉండు</p>
+    <p>ఈ రోజు నీకు దక్కిన ప్రతి క్షణాన్ని</p>
+    <p>మనస్ఫూర్తిగా ఆస్వాదించు</p>
+    <p>నీ అందమైన చిరునవ్వుతో</p>
+    <p>ఈ రోజును ఒక మధురమైన జ్ఞాపకంగా మార్చుకో</p>
+
+    <p>చివరిగా...</p>
+    <p>మరోసారి నీకు చెప్పాలనుకుంటున్నాను</p>
+    <p><strong>హ్యాపీ బర్త్‌డే <span class="user-name">Kavya</span> 💛</strong></p>
+</div>
+
+<p class="letter-signoff">ఎప్పుడూ నీకు మంచి జరగాలని కోరుకుంటూ... 🎂💛</p>
+			</div>
+
+			
+
+		</div>
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-8 text-center col-md-offset-2">
+					<button class="btn btn-primary" id="turn_on">💡 Turn On Lights</button>
+					<button class="btn btn-primary" id="play">🎵 Play Music</button>
+					<button class="btn btn-primary" id="bannar_coming">🎀 Let's Decorate</button>
+					<button class="btn btn-primary" id="balloons_flying">🎈 Fly With Balloons</button>
+					<button class="btn btn-primary" id="cake_fadein">🍰 Most Delicious Cake Ever</button>
+					<button class="btn btn-primary" id="light_candle">🕯️ Light Candle</button>
+					<button class="btn btn-primary" id="cake_cut">🔪 Cut The Cake</button>
+					<button class="btn btn-primary" id="wish_message">💌 Happy Birthday</button>
+					<button class="btn btn-primary" id="story">💌 Open Your Letter</button>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="effect.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58229732-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
